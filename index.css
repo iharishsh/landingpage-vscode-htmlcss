@@ -87,3 +87,17 @@ body {
   cursor: pointer;
   border: none;
 }
+
+.recent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #9ba3b4;
+}
+
+.recent a {
+    font-weight: bold;
+    padding-right: 5px;
+    color: #4DAAFC;
+}
