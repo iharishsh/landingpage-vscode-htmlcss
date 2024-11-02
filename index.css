@@ -1,0 +1,89 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #0d1117;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.navbar .logo {
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
+}
+
+.navbar .title {
+    font-size: 18;
+    color: white;
+    font-weight: 550;
+    padding-right: 10px;
+}
+
+.navlist {
+  color: #9ba3b4;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  gap: 20px;
+}
+
+.list:hover {
+  color: #fff;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.search-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 5px 12px 5px 36px;
+  border-radius: 4px;
+  color: white;
+}
+
+.search-input:focus {
+  border-color: #0078d4;
+  outline: none;
+}
+
+.download-button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #0078d4;
+  cursor: pointer;
+  border: none;
+}
