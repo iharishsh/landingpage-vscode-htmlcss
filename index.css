@@ -163,6 +163,16 @@ body {
   color: #9ba3b4;
 }
 
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    width: 80%;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
