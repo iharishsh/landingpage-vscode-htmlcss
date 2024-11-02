@@ -1,29 +1,31 @@
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
   background-color: #0d1117;
+  margin: 0;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  cursor: pointer;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
-.navbar .logo {
+.logo {
   width: 24px;
   height: 24px;
   padding-right: 10px;
 }
 
-.navbar .title {
-  font-size: 18;
+.title {
+  font-size: 18px;
   color: white;
   font-weight: 550;
   padding-right: 10px;
@@ -34,7 +36,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   display: flex;
-  padding: 0px 20px 0px 20px;
   gap: 20px;
 }
 
@@ -45,7 +46,6 @@ body {
 .right-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 10px;
 }
 
@@ -81,7 +81,6 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
-  line-height: 100%;
   padding: 8px 16px;
   border-radius: 4px;
   background-color: #0078d4;
@@ -89,6 +88,7 @@ body {
   border: none;
 }
 
+/* Recent Updates */
 .recent {
   display: flex;
   align-items: center;
@@ -104,55 +104,50 @@ body {
   color: #4daafc;
 }
 
+/* Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: #9ba3b4;
   padding: 16px;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 72px;
+  font-size: 48px;
   color: white;
   margin-top: 1rem;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .hero h3 {
-  text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   max-width: 720px;
-  margin-top: 0px;
+}
+
+.download-soft-btn,
+.try-soft-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
 }
 
 .download-soft-btn {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 100%;
-  padding: 10px 20px;
-  border-radius: 4px;
   background-color: #0078d4;
-  cursor: pointer;
-  border: none;
 }
 
 .try-soft-btn {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 100%;
-  padding: 10px 20px;
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255, 0.1);
-  cursor: pointer;
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dl {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .dl a {
@@ -160,9 +155,73 @@ body {
 }
 
 .agreement {
-    margin: 0px;
-    font-size: 8px;
+  font-size: 10px;
+  margin: 10px 0;
 }
+
 .agreement a {
-    color: #9ba3b4;
+  color: #9ba3b4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navlist {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 5px 12px 5px 32px;
+  }
+
+  .download-button,
+  .download-soft-btn,
+  .try-soft-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navlist {
+    display: none;
+  }
+
+  .right-nav {
+    gap: 5px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h3 {
+    font-size: 16px;
+  }
+
+  .download-soft-btn,
+  .try-soft-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .search-input {
+    padding: 5px 10px 5px 28px;
+    width: 100%;
+  }
 }
