@@ -16,6 +16,12 @@ body {
   align-items: center;
   padding: 10px 20px;
   flex-wrap: wrap;
+  margin: 0 5rem 0 5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -164,13 +170,13 @@ body {
 }
 
 .hero-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cover {
-    width: 80%;
+  width: 80%;
 }
 
 /* Responsive Design */
